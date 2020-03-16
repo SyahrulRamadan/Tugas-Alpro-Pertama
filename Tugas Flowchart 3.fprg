@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ROG STRIX"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-03-11 10:29:14 AM"/>
+        <attribute name="created" value="Uk9HIFNUUklYO0FEUllBTi1EV0lQUkFXSTsyMDIwLTAzLTEwOzEwOjE1OjM2IFBNOzMwNDk="/>
+        <attribute name="edited" value="Uk9HIFNUUklYO0FEUllBTi1EV0lQUkFXSTsyMDIwLTAzLTExOzEwOjI5OjE0IEFNOzI7MzE0NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="array" type="Integer" array="True" size="100"/>
+            <declare name="i, n" type="Integer" array="False" size=""/>
+            <declare name="jumlah" type="Integer" array="False" size=""/>
+            <assign variable="jumlah" expression="1"/>
+            <input variable="n"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <input variable="array[i]"/>
+            </for>
+            <output expression="&quot;Jumlah bilangan&quot;" newline="False"/>
+            <output expression="n" newline="True"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <output expression="array[i]" newline="True"/>
+                <assign variable="jumlah" expression="jumlah*array[i]"/>
+            </for>
+            <output expression="&quot;Hasil pengalian &quot;" newline="False"/>
+            <output expression="jumlah" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

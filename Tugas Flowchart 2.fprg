@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ROG STRIX"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-03-10 10:15:33 PM"/>
+        <attribute name="created" value="Uk9HIFNUUklYO0FEUllBTi1EV0lQUkFXSTsyMDIwLTAzLTEwOzEwOjA1OjQ1IFBNOzMwNDg="/>
+        <attribute name="edited" value="Uk9HIFNUUklYO0FEUllBTi1EV0lQUkFXSTsyMDIwLTAzLTEwOzEwOjE1OjMzIFBNOzE7MzE1NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="array[3][3]" type="Integer" array="False" size=""/>
+            <declare name="k" type="Integer" array="False" size=""/>
+            <declare name="jumlah_dus" type="Integer" array="False" size=""/>
+            <assign variable="array[3][3]" expression="{{2,4,6},{8,10,12},{14,16,18}}"/>
+            <assign variable="k" expression="0"/>
+            <assign variable="jumlah_dus" expression="9"/>
+            <output expression="&quot;Jumlah dus : &quot;" newline="False"/>
+            <output expression="Jumlah_dus" newline="True"/>
+            <output expression="&quot;Nomor Dus &quot;" newline="False"/>
+            <for variable="i" start="0" end="3-1" direction="inc" step="1">
+                <for variable="j" start="0" end="3-1" direction="inc" step="1">
+                    <output expression="array[i][j]" newline="True"/>
+                </for>
+            </for>
+            <for variable="i" start="0" end="3-1" direction="inc" step="1">
+                <for variable="j" start="0" end="3-1" direction="inc" step="1">
+                    <output expression="&quot;Nomor dus ke&quot;" newline="False"/>
+                    <output expression="k + 1" newline="False"/>
+                    <output expression="&quot; = &quot;" newline="False"/>
+                    <output expression="array[i][j]" newline="True"/>
+                    <assign variable="k" expression="k + 1"/>
+                </for>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
